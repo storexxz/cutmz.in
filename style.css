@@ -2,23 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CUSTOMZZ – Discord Services</title>
+    <title>CUSTOMZZ STORE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Background Video -->
     <video autoplay muted loop id="bg-video">
-        <source src="assets/backgrounds/cherry.mp4" type="video/mp4">
+        <source src="assets/backgrounds/video.mp4" type="video/mp4">
     </video>
 
-    <!-- Center Button -->
-    <div class="center-box">
-        <a class="discord-btn" href="https://discord.gg/5HZGgEJM" target="_blank">
-            <img src="assets/icons/discord-pink.png" alt="Discord Icon">
+    <!-- Store Name -->
+    <h1 class="title">CUSTOMZZ</h1>
+
+    <!-- Buttons in center -->
+    <div class="btn-container">
+
+        <!-- Discord -->
+        <a class="main-btn" 
+           href="https://discord.gg/5HZGgEJM"
+           target="_blank">
+
+            <img src="assets/icons/discord-pink.png">
             Join Discord
         </a>
+
+        <!-- Donate -->
+        <div class="main-btn" onclick="showDonate()">
+            <img src="assets/icons/donate-pink.png">
+            Donate
+        </div>
+
     </div>
 
+    <!-- DONATE POPUP -->
+    <div id="donate-popup" class="popup">
+        <div class="popup-box">
+            <h2>Donate via Fampay</h2>
+            <img src="assets/qr/fampay.png" class="qr-img">
+            <div class="close-btn" onclick="closeDonate()">Close</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
