@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #020202;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Store Logo */
+.top-logo {
+    width: 150px;
+    margin: 20px auto 10px;
+    display: block;
+}
+
+/* Sections */
+.section {
+    display: none;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Headings */
+h1, h2 {
+    color: #00c3ff;
+    text-shadow: 0 0 10px #00c3ff;
+}
+
+/* Button List */
+.button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 85%;
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    border: 1px solid #00c3ff;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Button hover */
+.nav-button:hover {
+    background: #00121b;
+    box-shadow: 0 0 12px #00c3ff;
+}
+
+/* Button Icon */
+.nav-button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Back Button */
+.back-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid #00c3ff;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    background: #00121b;
+    box-shadow: 0 0 10px #00c3ff;
+}
+
+/* Discord Button */
+.discord-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid #00c3ff;
+    border-radius: 10px;
+    color: #00c3ff;
+    margin: 20px auto;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.discord-button:hover {
+    background: #00121b;
+    box-shadow: 0 0 12px #00c3ff;
+}
